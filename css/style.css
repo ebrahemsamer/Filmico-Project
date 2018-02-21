@@ -1,0 +1,123 @@
+body
+{
+	font-family: 'Lato', sans-serif;
+	padding-top: 70px;
+	background-color: #1a2a46;
+}
+
+/* Navbar Style */
+#logo {
+	margin: 0;
+	margin-top: -17px;
+}
+#logo img {
+	border-radius: 50%;
+	box-shadow: 3px 3px 3px 0px #670303;
+}
+ul.nav li {
+	letter-spacing: 2px;
+}
+.navbar-right {
+	margin-right: 5px
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #000;
+}
+.navbar-inverse {
+	background: black;
+	border-radius: 0px;
+	min-height: 75px;
+}
+.navbar-nav>li>a {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.navbar {
+	margin-bottom:0;
+}
+
+/*  Carousel style */
+#carousel img
+{
+	max-width: 100%;
+	width: 100%;
+}
+#carousel
+{
+	max-height: 500px;
+}
+.carousel-inner {
+	max-height: 500px
+}
+
+/* Main Style */
+main.all-movies{
+	margin-top: 30px;
+}
+main.all-movies h2 {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+/* Search input */
+.search-input {
+	margin-top: 16px;
+}
+.search-input input {
+	opacity: .5;
+}
+main.last-movies {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+main hr
+{
+	margin-top: 20px;
+	border-width: 3px;
+	border-color: #DDD;
+}
+main .col-xs-4 hr {
+	margin-top: 40px;
+}
+main .movies img
+{
+	max-width: 100%;
+	max-height: 200px;
+	width: 100%;
+	height: 200px;
+}
+main .movies a {
+	margin-top: 20px;
+}
+
+main .movie {
+	margin-bottom: 20px;
+}
+main .movies h3 {
+	color: #DDD;
+}
+/* Footer style */
+footer {
+	background: black;
+}
+
+footer svg {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	max-width: 100%;
+}
+footer svg text {
+	font-family: 'Berkshire Swash', cursive;
+}
+footer h5 ,
+footer ul li {
+	color: #DDD;
+}
+footer ul li {
+	margin-left: 10px;
+}
