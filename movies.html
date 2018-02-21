@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+	<title>Felmico : Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/media-query.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#btn" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      			</button>
+				<a id="logo" class="navbar-brand" href="#">
+					<img src="img/logo.jpg" height="70" width="100">
+				</a>
+			</div>
+		    <div class="collapse navbar-collapse" id="btn">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		         <li class="active"><a href="movies.html">Browse Movies</a>  </li>
+		         <li><a href="">Login</a></li>
+		      </ul>
+		    </div>
+		</div>
+	</nav>
+	<main class="all-movies">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 text-left text-muted">
+					<h2>All Movies</h2>
+				</div>
+				<div class="col-xs-12 col-sm-6 search-input">
+					<div>
+						<input class="form-control" type="text" name="search" placeholder="Search Movie" autocomplete="off" >
+					</div>
+				</div>
+			</div>
+<!-- 			<div class="row">
+				<div class="col-xs-12">
+					<hr>
+				</div>
+			</div> -->
+			<div class="movies row">
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/Foreigner.jpg" alt="The Foreigner Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-8">
+							<h3>The Foreigner</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/it.jpg" alt="IT Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h3>IT</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/Bright.jpg" alt="Bright Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h3>Bright</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/The-great-wall.jpg" alt="The great wall Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-8">
+							<h3>The great wall</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/Rings.jpg" alt="Rings Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h3>Rings</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/justice_league.jpg" alt="justice league Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h3>Justice League</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/security.jpg" alt="security Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-8">
+							<h3>security</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/One-of-Us.jpg" alt="One of Us Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h3>One of Us</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 movie">
+					<img class="img-responsive" src="img/sher 2017.jpg" alt="sher Movie">
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<h3>sher 2017</h3>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<a class="btn btn-warning" href=""><span class="glyphicon glyphicon-facetime-video"></span> Watch Now</a>
+						</div>				
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 col-xs-12">
+					<hr>
+				</div>
+			</div>	
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h5>References</h5>
+					<ul class="list-unstyled"> 
+						<li><a href="">Home</a></li>
+						<li><a href="">Browse Movies</a></li>
+						<li> <a href="">Sign in</a> for <span style="color: green;"> Free</span> </li>
+					</ul>
+					<p>Copyright &copy; at 2018</p>
+				</div>
+				<div class="col-md-6">
+					<svg height="100" >
+						<text x="60" y="90" fill="red" font-size="60px">Film</text>
+						<text x="180" y="90" fill="#DDD" font-size="65px">iC</text>
+						<text class="moving" x="230" y="90" fill="red" font-size="60px">o</text>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
