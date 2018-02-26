@@ -3,16 +3,17 @@ body
 	font-family: 'Lato', sans-serif;
 	padding-top: 70px;
 	background-color: #1a2a46;
+	width: calc(100% + 20px);
+	overflow-x: hidden;
 }
 
 /* Navbar Style */
 #logo {
 	margin: 0;
-	margin-top: -17px;
+	margin-top: -20px;
 }
 #logo img {
 	border-radius: 50%;
-	box-shadow: 3px 3px 3px 0px #670303;
 }
 ul.nav li {
 	letter-spacing: 2px;
@@ -77,14 +78,13 @@ main.last-movies {
 main hr
 {
 	margin-top: 20px;
-	border-width: 3px;
+	border-width: 1px;
 	border-color: #DDD;
 }
 main .col-xs-4 hr {
 	margin-top: 40px;
 }
-main .movies img
-{
+main .movies img {
 	max-width: 100%;
 	max-height: 200px;
 	width: 100%;
@@ -120,4 +120,31 @@ footer ul li {
 }
 footer ul li {
 	margin-left: 10px;
+}
+
+/* Modal style */
+
+.modal-content {
+	 width: 400px;
+	  left: 150px;
+}
+.login-span , .sign-up-span {
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: 100;
+}
+.login-span {
+	color: green;
+}
+.sign-up-span {
+	opacity: .5;
+}
+#sign-up-modal {
+	display: none;
+}
+.modal-body p {
+	margin-left: 10px;
+}
+.modal-footer p {
+	color: #DDD;
 }

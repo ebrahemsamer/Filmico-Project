@@ -21,14 +21,14 @@
 			        <span class="icon-bar"></span>
       			</button>
 				<a id="logo" class="navbar-brand" href="#">
-					<img src="img/logo.jpg" height="70" width="100">
+					<img src="img/logo.jpg" height="80" width="110">
 				</a>
 			</div>
 		    <div class="collapse navbar-collapse" id="btn">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 		         <li><a href="movies.html">Browse Movies</a>  </li>
-		         <li><a href="" data-toggle="modal" data-target="#myModal">Login</a></li>
+		         <li><a id="mod" href="" data-toggle="modal" data-target="#myModal">Login</a></li>
 		      </ul>
 		    </div>
 		</div>
@@ -153,9 +153,6 @@
 		</div>
 	</footer>
 
-
-
-
 	<!-- Modal -->
 
 	<div class="modal fade" id="myModal">
@@ -163,26 +160,49 @@
 			<div class="modal-content ">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-					<h4 class="modal-title text-center"><span>Login</span> | <span>Sign up</span></h4>
+					<h4 class="modal-title text-center"><span class="login-span">Sign in</span> | <span class="sign-up-span">Sign up</span></h4>
 				</div>
-				<div class="modal-body">
+				<div id="login-modal" class="modal-body">
 					<form>
 						<div class="form-group">
-							<input type="text" name="email" class="form-control">
+							<input type="text" name="email" class="form-control" placeholder="Username or Email ">
 						</div>
-						
+						<div class="form-group">
+							<input type="password" name="password" class="form-control" placeholder="Password ">
+						</div>
+						<div class="forgot">
+							<p><a href=""> Forgot your password </a> ?</p>
+						</div>
 					</form>
 				</div>
+				<div id="sign-up-modal" class="modal-body">
+					<div class="form-group">
+						<input type="text" name="username" class="form-control" placeholder="Username">
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" class="form-control" placeholder="Password ">
+					</div>
+					<div class="form-group">
+						<input type="password" name="confirm-password" class="form-control" placeholder="Confirm Password ">
+					</div>
+				</div>	
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default">Close </button>
-					<button type="button" class="btn btn-primary">Login </button>
+					<button type="button" data-dismiss="modal" class="btn btn-danger">Cancel </button>
+					<button type="button" class="btn btn-success">Login </button>
+					<p class="text-center">Or Sign in Using </p>
+					<div class="sites">
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
