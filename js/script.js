@@ -1,7 +1,6 @@
 // working with search input 
 $(".search-input input").click(function() {
 		$(".search-input input").css("transition" , "2s");
-		$(".search-input input").css("opacity" , 1);
 });
 
 // working with modal 
@@ -25,4 +24,12 @@ $(".login-span").click(function() {
 });
 
 // jquery playing 
+
+$('input').keypress(function(e) { // keyup when the button released from click , keydown when the button pressed and not released
+
+	if(e.which == 90) {
+		alert("Z is pressed");
+	}
+
+});
 

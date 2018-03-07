@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/media-query.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.7/web-fonts-with-css/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -40,16 +41,17 @@
 					<h2>All Movies</h2>
 				</div>
 				<div class="col-xs-12 col-sm-6 search-input">
-					<div>
-						<input class="form-control" type="text" name="search" placeholder="Search Movie" autocomplete="off" >
-					</div>
+					<form class="form-inline">
+						<div class="form-group">
+							<div class="input-group">
+								<input class="form-control" type="text" name="search" placeholder="Search Movie" autocomplete="off" >
+								<div class="input-group-addon"> <i class="fas fa-search"></i> </div>
+							</div>
+						</div>
+					</form>
+
 				</div>
 			</div>
-<!-- 			<div class="row">
-				<div class="col-xs-12">
-					<hr>
-				</div>
-			</div> -->
 			<div class="movies row">
 				<div class="col-md-4 col-sm-6 col-xs-12 movie">
 					<img class="img-responsive" src="img/Foreigner.jpg" alt="The Foreigner Movie">
@@ -190,7 +192,7 @@
 			<div class="modal-content ">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-					<h4 class="modal-title text-center"><span class="login-span">Login</span> | <span class="sign-up-span">Sign up</span></h4>
+					<h4 class="modal-title text-center"><span class="login-span">Sign in</span> | <span class="sign-up-span">Sign up</span></h4>
 				</div>
 				<div id="login-modal" class="modal-body">
 					<form>
@@ -220,8 +222,29 @@
 					</div>
 				</div>	
 				<div class="modal-footer">
-					<button type="button" data-dismiss="modal" class="btn btn-danger">Cancel </button>
-					<button type="button" class="btn btn-success">Login </button>
+					<button type="button" data-dismiss="modal" class="btn btn-default cancel">Cancel </button>
+					<button type="button" class="btn btn-default login">Login </button>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Or Sign up using one of these services </p>
+						</div>
+					</div>
+					<div class="row">
+						<hr>
+					</div>
+					<div class="sites">
+						<div class="row">
+							<div class="col-md-4">
+								<a class="btn btn-default" href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+							</div>
+							<div class="col-md-4">
+								<a class="btn btn-default" href=""><i class="fab fa-google"></i> Google</a>
+							</div>
+							<div class="col-md-4">
+								<a class="btn btn-default" href=""><i class="fab fa-twitter"></i> Twitter</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -69,8 +69,25 @@ main.all-movies h2 {
 	margin-top: 16px;
 }
 .search-input input {
-	opacity: .5;
+	color: #DDD;
+	background-color: #1a2a46;
+	border-radius: 10px 0 0 10px;
 }
+.form-inline .form-group  , .form-inline .input-group{
+	width: 100%;
+}
+.form-inline .input-group-addon {
+	padding: 0 0;
+	background: #1a2a46;
+	cursor: pointer;
+	transition: .5s;
+}
+.form-inline .input-group-addon:hover {
+	color: #DDD;
+}
+
+
+/* Main Area */
 main.last-movies {
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -126,7 +143,7 @@ footer ul li {
 
 .modal-content {
 	 width: 400px;
-	  left: 150px;
+	  left: 130px;
 }
 .login-span , .sign-up-span {
 	cursor: pointer;
@@ -146,5 +163,35 @@ footer ul li {
 	margin-left: 10px;
 }
 .modal-footer p {
-	color: #DDD;
+	color: #7b7777;
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 20px;
+}
+.modal .btn {
+	transition: .5s;
+	border-radius: 0;
+	width: 100px;
+}
+.modal .btn-default.login:hover {
+    background-color: #449d44;
+    border-color: #398439;
+    color: #DDD;
+}
+.modal .btn-default.cancel:hover {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color: #DDD;
+}
+.modal i.fa-facebook-square {
+	color : #3a3a88;
+}
+.modal i.fa-twitter {
+	color : #22b8cf;
+}
+.modal i.fa-google {
+	color : #dd5347;
+}
+.modal-content {
+	border-radius: 0px;
 }
